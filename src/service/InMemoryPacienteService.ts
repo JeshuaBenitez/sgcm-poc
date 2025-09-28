@@ -1,5 +1,5 @@
 // src/service/InMemoryPacienteService.ts
-import type { IPacienteService } from "./IPacienteService";
+import type { IPacienteService } from "../controller/IPacienteService";
 import type { Paciente, PacienteId } from "../domain/Paciente";
 
 export class InMemoryPacienteService implements IPacienteService {

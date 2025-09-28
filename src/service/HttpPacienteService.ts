@@ -1,5 +1,5 @@
 // src/service/HttpPacienteService.ts
-import type { IPacienteService } from "./IPacienteService";
+import type { IPacienteService } from "../controller/IPacienteService";
 import type { Paciente, PacienteId } from "../domain/Paciente";
 const API = "http://localhost:3000";
 

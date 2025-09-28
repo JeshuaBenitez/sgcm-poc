@@ -1,8 +1,8 @@
 // src/controller/usePacienteController.ts
 import { useMemo, useState, useEffect } from "react";
 import type { Paciente, PacienteId } from "../domain/Paciente";
-import type { IPacienteService } from "../service/IPacienteService";
-import type { INotifier } from "../service/INotifier";
+import type { IPacienteService } from "./IPacienteService";
+import type { INotifier } from "../modules/notifications/INotifier";
 
 // Validaciones simples (autodescriptivas/tolerancia a errores - ISO 9241)
 function todayISO() {
