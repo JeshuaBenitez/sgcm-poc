@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Componentes propios: SOLO aplicamos utilidades de Tailwind */
+@layer components {
+  .btn { @apply px-3 py-2 rounded-lg border text-sm font-medium hover:shadow; }
+
+  /* antes: @apply btn ...  → ahora repetimos utilidades */
+  .btn-primary { 
+    @apply px-3 py-2 rounded-lg border text-sm font-medium hover:shadow
+           bg-teal-600 text-white hover:bg-teal-700;
+  }
+
+  .btn-ghost { 
+    @apply px-3 py-2 rounded-lg border text-sm font-medium hover:shadow
+           border-gray-300 bg-white hover:bg-gray-50;
+  }
+
+  .input { @apply w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-teal-400; }
+  .card { @apply bg-white rounded-2xl shadow p-4; }
+  .title { @apply text-2xl font-semibold text-teal-800; }
+}
